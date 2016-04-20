@@ -16,3 +16,22 @@ Make sure `Maven` is in your path so that you can access the `mvn` command. Then
 ## How to run
 
 Make sure you first build the project and the `target` directory exist. Then open up a terminal and execute the command `java -jar target/peer-teaching-1.0-SNAPSHOT.jar server`
+
+## Routes
+
+* `/server - GET` List all servers
+* `/server - POST` Insert a new server
+* `/server/{id} - GET` Get a specific server
+* `/server/{id} - DELETE` Deletes a specific server
+
+## The server object
+
+The server object has a few properties: Processor, memory and storage space. Down below you can find an example object in JSON.
+
+```
+{
+  "processor": "Intel i7",
+  "memory": "4GB",
+  "storage-space": "250GB"
+}
+```
